@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: azure;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+.footer,
+.navmain {
+  background-color: azure;
+}
+.animatedButton {
+  animation-duration: 10000ms;
+}
+.ql-container {
+  border: none !important;
+}
+.ql-toolbar {
+  border: none !important;
+}
+.ql-editor {
+  border: none !important;
+}
+.blog-content {
+  flex-direction: column;
+}
+.blog-content img {
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+.blog-content h1 {
+  word-wrap: break-word;
+}
+.blog-content h2 {
+  word-wrap: break-word;
+}
+.blog-content h3 {
+  word-wrap: break-word;
+}
+.blog-content h4 {
+  word-wrap: break-word;
+}
+.blog-content p {
+  width: 800px;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 500;
+  word-break: break-all;
+}
+.blog-content iframe {
+  border-radius: 12px;
+}
