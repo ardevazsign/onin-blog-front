@@ -49,7 +49,7 @@ const PostList = () => {
       loader={<h4>Loading more posts...</h4>}
       endMessage={
         <p className="mt-10 flex items-center justify-center">
-          <b className="font-serif">All posts loaded!</b>
+          <b className="font-serif mb-10">All posts loaded!</b>
         </p>
       }
     >

@@ -22,9 +22,9 @@ const Homepage = () => {
   });
 
   return (
-    <div className=" flex flex-col gap-4 mt-16">
+    <div className=" flex flex-col gap-4 mt-16 ">
       {/* {BREADCRUMB} */}
-      <div className="flex gap-4">
+      <div className="flex gap-4 ml-4">
         <Link to="/">Home</Link>
         <span>⦿</span>
         <span className="text-blue-800">Blogs and Articles</span>
@@ -42,11 +42,11 @@ const Homepage = () => {
             <p>Something went wrong.</p>
           ) : (
             <>
-              <h1 className=" w-[600px] lg:w-[800px] xl:w-[900px] 2xl:text-[24px] 2xl:w-[1100px] text-gray-800 text-1xl md:text-[20px] lg:text-2xl font-bold indent-28 font-serif italic">
+              <h1 className=" w-[380px] lg:w-[800px] xl:w-[900px] 2xl:text-[24px] 2xl:w-[1100px] text-gray-800 text-1xl md:text-[20px] lg:text-2xl font-bold indent-28 font-serif italic">
                 {data?.title}
               </h1>
 
-              <p className=" w-[560px] lg:w-[780px] xl:w-[900px] 2xl:w-[1100px] 2xl:mr-0 mt-6 md:mr-0 md:leading-5 text-md md:text-[16px] 2xl:text-[18px] text-gray-600 indent-28 text-justify mr-0 xl:mr-52 italic font-serif 2xl:text-m leading-none">
+              <p className=" w-[380px] lg:w-[780px] xl:w-[900px] 2xl:w-[1100px] 2xl:mr-0 mt-6 md:mr-0 md:leading-5 text-md md:text-[16px] 2xl:text-[18px] text-gray-600 indent-16 text-justify mr-0 xl:mr-52 italic font-serif 2xl:text-m leading-none">
                 {data?.desc}
               </p>
             </>
@@ -109,8 +109,8 @@ const Homepage = () => {
       {/* {FEATURED POSTS} */}
       <FeaturedPosts />
       {/* {POST LIST} */}
-      <div className="mb-20 mt-[500px] sm:mt-[600px] md:mt-[40px] lg:mt-[140px] xl:mt-[340px] 2xl:mt-[300px]">
-        <h1 className="my-8 text-2xl text-gray-600">Recent Posts</h1>
+      <div className="mb-20 mt-[500px] sm:mt-[600px] md:mt-[40px] lg:mt-[140px] xl:mt-[340px] 2xl:mt-[300px] w-[390px] sm:w-[600px] md:w-[800px] lg:w-[900px] xl:w-[1000px] 2xl:w-[1200px] flex flex-col items-center justify-center gap-4 ">
+        <h1 className="my-8 text-2xl text-gray-600 italic">Recent Posts</h1>
         <PostList />
       </div>
     </div>

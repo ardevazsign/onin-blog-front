@@ -21,11 +21,11 @@ const Navbar = () => {
   // }, []);
 
   return (
-    <div className="w-[640px] sm:w-[767px] md:w-[920px] lg:w-[1140px] xl:w-[1420px] 2xl:w-[1580px] xl:p-4 h-14  xl:h-16 md:h-14 flex items-center justify-between fixed top-0 z-20 navmain rounded-md">
+    <div className="w-[412px] sm:w-[767px] md:w-[920px] lg:w-[1140px] xl:w-[1420px] 2xl:w-[1580px] xl:p-4 h-14  xl:h-16 md:h-14 flex items-center justify-between fixed top-0 z-20 navmain rounded-md">
       {/* {LOGO} */}
       <Link
         to="/"
-        className=" flex justify-center items-center gap-4 text-2xl font-bold "
+        className=" flex justify-center items-center gap-4 text-2xl font-bold pl-6 "
       >
         <IKImage
           urlEndpoint={import.meta.env.VITE_IK_URL_ENDPOINT}
@@ -34,7 +34,7 @@ const Navbar = () => {
           className=" w-10 h-10 rounded-full shadow-xl hover:border-[3px] hover:border-solid border-white  border-[.5px]"
         />
 
-        <span className=" font-serif md:text-[20px] xl:text-[24px]">
+        <span className=" font-serif md:text-[20px] xl:text-[24px] ">
           Niños Blog
         </span>
       </Link>
@@ -51,7 +51,7 @@ const Navbar = () => {
       <div className="md:hidden relative pt-4 pb-4 ">
         {/* {Mobile Button} */}
         <div
-          className="cursor-pointer flex text-center items-center justify-center text-2xl w-8 h-8 fixed top-4 right-8 z-40 rounded-md bg-slate-100 hover:bg-blue-600 hover:text-white shadow-md"
+          className="cursor-pointer flex text-center items-center justify-center text-2xl w-8 h-8 fixed top-4 right-4 z-40 rounded-md bg-slate-100 hover:bg-blue-600 hover:text-white shadow-md"
           onClick={() => setOpen((prev) => !prev)}
         >
           {open ? 'X' : '≡'}
@@ -63,41 +63,41 @@ const Navbar = () => {
         <div
           className={`fixed inset-0 top-14
                      flex flex-col items-center justify-center gap-8
-                   bg-yellow-600 z-50
+                   bg-yellow-400 z-50
                      transition-transform duration-300 ease-in-out
                      ${open ? 'translate-x-0' : 'translate-x-full'}`}
         >
           <Link
             to="/"
-            className="hover:text-blue-600 hover:bg-slate-200 p-1 px-4 rounded-full hover:shadow-lg"
+            className="hover:text-blue-600 hover:bg-slate-200 p-1 px-4 rounded-full hover:shadow-lg text-[18px] font-serif semibold italic"
             onClick={() => setOpen(false)}
           >
             Home
           </Link>
           <Link
             to="/posts?sort=trending"
-            className="hover:text-blue-600 hover:bg-slate-200 p-1 px-4 rounded-full hover:shadow-lg"
+            className="hover:text-blue-600 hover:bg-slate-200 p-1 px-4 rounded-full hover:shadow-lg text-[18px] font-serif semibold italic"
             onClick={() => setOpen(false)}
           >
             Trending
           </Link>
           <Link
             to="/posts?sort=popular"
-            className="hover:text-blue-600 hover:bg-slate-200 p-1 px-4 rounded-full hover:shadow-lg"
+            className="hover:text-blue-600 hover:bg-slate-200 p-1 px-4 rounded-full hover:shadow-lg text-[18px] font-serif semibold italic"
             onClick={() => setOpen(false)}
           >
             Most Popular
           </Link>
           <Link
             to="/about"
-            className="hover:text-blue-600 hover:bg-slate-200 p-1 px-4 rounded-full hover:shadow-lg"
+            className="hover:text-blue-600 hover:bg-slate-200 p-1 px-4 rounded-full hover:shadow-lg text-[18px] font-serif semibold italic"
             onClick={() => setOpen(false)}
           >
             About
           </Link>
           <SignedOut>
             <Link to="/login" onClick={() => setOpen(false)}>
-              <button className="py-2 px-4 rounded-2xl bg-blue-700 text-white">
+              <button className="py-2 px-8 rounded-2xl bg-blue-700 text-white">
                 Login 👋
               </button>
             </Link>

@@ -17,7 +17,7 @@ const Search = () => {
   };
 
   return (
-    <div className="pl-4 md:pl-4 md:gap-1 w-[540px] md:w-[220px] xl:w-[240px] 2xl:w-[250px] bg-gray-100 xl:p-2 lg:p-1 rounded-full flex items-center 2xl:gap-1 xl:gap-2 lg:gap-1 lg:text-xs xl:text-sm hover:shadow-md">
+    <div className="pl-4 md:pl-4 md:gap-1 w-[390px] md:w-[220px] xl:w-[240px] 2xl:w-[250px] bg-gray-100 xl:p-2 lg:p-1 rounded-full flex items-center 2xl:gap-1 xl:gap-2 lg:gap-1 lg:text-xs xl:text-sm hover:shadow-md">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"

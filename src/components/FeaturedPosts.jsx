@@ -29,9 +29,9 @@ const FeaturedPosts = () => {
   }
 
   return (
-    <div className="w-[600px] md:w-[850px] lg:w-[1100px] xl:w-[1300px] 2xl:w-[1500px] 2xl:gap-10 sm:ml-16 md:ml-0 md:gap-4  gap-8 xl:flex h-[765px] flex flex-col md:flex-row justify-center mt-[550px] sm:mt-[600px] md:mt-[20px]">
+    <div className="w-[400px] md:w-[850px] lg:w-[1100px] xl:w-[1300px] 2xl:w-[1500px] 2xl:gap-10 sm:ml-16 md:ml-0 md:gap-4  gap-8 xl:flex h-[765px] flex flex-col md:flex-row justify-center mt-[550px] sm:mt-[600px] md:mt-[20px]">
       {/* First lg:w-1/2 */}
-      <div className="2xl:w-[600px] 2xl:h-auto xl:w-[600px] w-[550px] md:w-[500px] lg:w-[450px] h-auto  flex flex-col gap-1 ">
+      <div className="2xl:w-[600px] 2xl:h-auto xl:w-[600px] w-[400px] md:w-[500px] lg:w-[450px] h-auto  flex flex-col gap-1 ">
         {/* image */}
         {posts[0].img && (
           <Image
@@ -67,7 +67,7 @@ const FeaturedPosts = () => {
       </div>
       {/* 3-blogs */}
       {/* Others */}
-      <div className="xl:w-[750px] w-[565px] md:w-[400px] lg:w-[550px] 2xl:w-[700px] h-auto flex flex-col gap-3 ">
+      <div className="xl:w-[750px] w-[400px] md:w-[400px] lg:w-[550px] 2xl:w-[700px] h-auto flex flex-col gap-3 ">
         {posts[1] && (
           <div className="2xl:gap-4 2xl:p-4 flex justify-between gap-4 p-4 md:gap-2 md:p-2  xl:gap-2 bg-white shadow-sm rounded-md border-b-2 border-slate-400 ">
             {posts[1].img && (
